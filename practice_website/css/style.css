@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto:400,700');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: "Roboto", sans-serif;
+}
+
+h1{
+  color: #003bde;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+h2, section p{
+  font-family: "Playfair Display", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+.new-background {
+  background-color: black;
+  color: white;
+}
+
+.new-background h1{
+  background-color: white;
+}
+
+nav li{
+  color: #051033;
+  display: inline-block;
+  padding-left: 15px;
+}
+
+nav ul{
+  list-style: none;
+}
+
+nav button{
+  color: white;
+  background-color: #003bde;
+}
+
+header {
+  display: flex;
+}
+
+header div{
+  background-color: #003bde;
+  color: white;
+  padding: 100px 60px;
+  display: inline-block;
+  width: 50%;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+header button{
+  color: #003bde;
+}
+
+header h2{
+  font-size: 45px;
+  margin-bottom: 30px;
+  width: 70%;
+}
+
+section{
+  text-align: center;
+  padding: 90px 60px;
+}
+
+section p{
+  font-size: 40px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid lightgray;
+}
+
+footer li {
+  color: gray;
+  display: inline-block;
+  padding: 30px 20px;
+}
+/*My Classes*/
+
+.btn{
+  border-radius: 5px;
+  font-size: 18px;
+  text-transform: capitalize;
+  letter-spacing: .3px;
+  padding: 15px 30px;
+  border: 0;
+  transition: 250ms linear;
+}
+
+.btn:hover{
+  background-color: #003bde;
+  color: white;
+}
+
+.btn-primary {
+  padding: 0 15px;
+  margin: 14px 0 14px 8px;
+  line-height: 34px;
+}
+
+/* IDs  */
+
+#headerLeft{
+  height: 350px;
+  background-image: url(https://images.unsplash.com/photo-1437750769465-301382cdf094?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80);
+  background-size: cover;
+  background-position: center;
+}
+
+#headerRight{
+  height: 350px;
+  background-image: url(https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1335&q=80);
+  background-size: cover;
+  background-position: center;
+}
+
+#mission-statement {
+  border-bottom: 1px solid black;
+}
+
+.hamburger {
+  margin-top: 15px;
+  display: none;
+}
+.hamburger span{
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: blue;
+  margin: 5px 0;
+}
+@media screen and (max-width: 945px) {
+
+  .hamburger {
+    display: block;
+  }
+  
+  header {
+    flex-wrap: wrap;
+  }
+
+  header div{
+    width: 100%;
+  }
+
+  #headerLeft, #headerRight {
+    height: auto;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+}
